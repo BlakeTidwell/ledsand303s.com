@@ -10,7 +10,6 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
-
 # Per-page layout changes:
 #
 # With no layout
@@ -52,6 +51,8 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 
 set :images_dir, 'img'
+
+set :haml, ugly: true, format: :html5
 
 # Build-specific configuration
 configure :build do
