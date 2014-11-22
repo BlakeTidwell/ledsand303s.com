@@ -12,9 +12,8 @@ title: HTML5 Boilerplate Middleman
 
     .right
       %ul.bytemist
-        %li.bandcamp Bandcamp
-        %li.twitter Twitter
-        %li.soundcloud Soundcloud
+        -data.links.each do |link|
+          %li{class: link.name}=link.label
 
   .scripture
     %blockquote We are The Iridescent Bytemist shimmering on The Edge of That Most Righteous Forgeboard whilst gliding across Sheets of Gleaming Metal.

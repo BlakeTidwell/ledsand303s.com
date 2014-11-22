@@ -1,0 +1,17 @@
+[
+    {
+        "name": "bandcamp",
+        "label": "Bandcamp",
+        "url": "http://ledsand303s.bandcamp.com/"
+    },
+    {
+        "name": "twitter",
+        "label": "Twitter",
+        "url": "https://twitter.com/LEDsAnd303s"
+    },
+    {
+        "name": "soundcloud",
+        "label": "Soundcloud",
+        "url": "https://soundcloud.com/ledsand303s"
+    }
+]
