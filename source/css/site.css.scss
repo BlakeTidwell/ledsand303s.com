@@ -94,39 +94,44 @@ ul.bytemist {
   padding: 0;
   list-style: none;
   > li {
-    padding: $small-padding-normal;
-    border-width: $border-width-normal;
-    border-color: white;
-    border-style: solid;
     cursor: pointer;
     margin: $margin-normal 0;
+    padding: 0;
     text-align: right;
-    &:hover {
-      border-width: $border-width-normal + $border-width-effect;
-      padding: $small-padding-normal - $border-width-effect;
-    }
-    &.bandcamp {
-      color: lighten($primary, 60%);
-      border-color: lighten($primary, 60%);
+    > a{
+      display: block;
+      text-decoration: none;
+      padding: $small-padding-normal;
+      border-width: $border-width-normal;
+      border-color: white;
+      border-style: solid;
       &:hover {
-        color: lighten($primary, 30%);
-        border-color: lighten($primary, 30%);
+        border-width: $border-width-normal + $border-width-effect;
+        padding: $small-padding-normal - $border-width-effect;
       }
-    }
-    &.soundcloud {
-      color: lighten($tertiary, 40%);
-      border-color: lighten($tertiary, 40%);
-      &:hover {
-        color: lighten($tertiary, 20%);
-        border-color: lighten($tertiary, 20%);
+      &.bandcamp {
+        color: lighten($primary, 60%);
+        border-color: lighten($primary, 60%);
+        &:hover {
+          color: lighten($primary, 30%);
+          border-color: lighten($primary, 30%);
+        }
       }
-    }
-    &.twitter {
-      color: lighten($secondary, 50%);
-      border-color: lighten($secondary, 50%);
-      &:hover {
-        color: lighten($secondary, 10%);
-        border-color: lighten($secondary, 10%);
+      &.soundcloud {
+        color: lighten($tertiary, 40%);
+        border-color: lighten($tertiary, 40%);
+        &:hover {
+          color: lighten($tertiary, 20%);
+          border-color: lighten($tertiary, 20%);
+        }
+      }
+      &.twitter {
+        color: lighten($secondary, 50%);
+        border-color: lighten($secondary, 50%);
+        &:hover {
+          color: lighten($secondary, 10%);
+          border-color: lighten($secondary, 10%);
+        }
       }
     }
   }
@@ -168,17 +173,13 @@ ul.bytemist {
 @media (min-width: 448px){
   ul.bytemist {
     > li {
-      padding: $large-padding-normal;
       width: 200px;
       float: right;
       clear: both;
-      &:hover {
-        padding: $large-padding-normal - $border-width-effect;
-      }
-      &:first-child {
+      > a {
+        padding: $large-padding-normal;
         &:hover {
-          margin-top: 1px;
-          margin-bottom: 1px;
+          padding: $large-padding-normal - $border-width-effect;
         }
       }
     }
