@@ -14,7 +14,18 @@ $border-width-v-effect: 15px;
 $margin-normal: 1px;
 $small-padding-normal: 10px;
 $large-padding-normal: 15px;
-$bg-image: image-path("img/fall-in-to-the-gap.jpeg");
+
+
+// 468px wide
+$bg-image-tiny: image-path("fall-in-to-the-gap-tiny.jpeg");
+// 768px wide
+$bg-image-small: image-path("fall-in-to-the-gap-small.jpeg");
+// 1024px wide
+$bg-image-medium: image-path("fall-in-to-the-gap-medium.jpeg");
+// 1280px wide
+$bg-image-large: image-path("fall-in-to-the-gap-large.jpeg");
+// 1920px wide
+$bg-image-full: image-path("fall-in-to-the-gap-full.jpeg");
 
 @import 'compass';
 
@@ -42,7 +53,7 @@ body {
   color: #eee;
   font-family: 'Share Tech Mono', Helvetica, sans-serif;
   font-weight: lighter;
-  background-image: url('#{$bg-image}');
+  background-image: url('#{$bg-image-tiny}');
   background-size: cover;
   background-position: center;
 }
@@ -83,16 +94,16 @@ body {
   max-width: 640px;
   margin: 0 auto;
   padding: 5px 1px;
+  h1 {
+    letter-spacing: -12px;
+    font-size: 100px;
+    text-align: left;
+    margin: 0 0 0 -5px;
+    line-height: 0.9;
+    font-weight: 400;
+  }
 }
 
-h1 {
-  letter-spacing: -12px;
-  font-size: 100px;
-  text-align: left;
-  margin: 0;
-  line-height: 0.9;
-  font-weight: 400;
-}
 
 .scripture {
   background-color: rgba(0, 0, 0, 0.3);
@@ -103,7 +114,7 @@ h1 {
   margin: 20px 0 0 0;
   padding: 0;
   blockquote {
-    margin: 20px;
+    margin: 20px 10px;
     font-weight: 400;
     text-transform: uppercase;
   }
@@ -178,9 +189,11 @@ ul.bytemist {
     width: 100%;
   }
 
-  h1 {
-    letter-spacing: -8px;
-    font-size: 64px;
+  .forge {
+    h1 {
+      letter-spacing: -8px;
+      font-size: 64px;
+    }
   }
 
   .scripture {
@@ -195,13 +208,15 @@ ul.bytemist {
   }
 }
 
-@media (min-width: 640px) {
-  body {
-    padding-top: 80px;
-  }
-}
-
 @media (min-width: 448px){
+  body {
+    background-image: url('#{$bg-image-small}');
+  }
+  .forge {
+    h1 {
+      margin-left: 0;
+    }
+  }
   ul.bytemist {
     > li {
       width: 200px;
@@ -214,5 +229,41 @@ ul.bytemist {
         }
       }
     }
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('#{$bg-image-medium}');
+  }
+
+  .forge {
+    h1 {
+      margin-left: -10px;
+    }
+  }
+
+  .scripture {
+    blockquote {
+      margin: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url('#{$bg-image-large}');
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    background-image: url('#{$bg-image-full}');
   }
 }
