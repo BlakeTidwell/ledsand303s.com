@@ -72,6 +72,14 @@ body {
   *zoom: 1;
 }
 
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
 .left, .right {
   width: 50%;
   float: left;
@@ -175,11 +183,9 @@ ul.bytemist {
   }
 }
 
-.credit {
-  position: absolute;
+.credit,
+.tweet {
   font-size: 10px;
-  bottom: 0;
-  right: 5px;
   > a {
     color: white;
   }

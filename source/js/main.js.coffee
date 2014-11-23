@@ -1,3 +1,4 @@
+#= require vendor/twitter
 #= require bower_components/waitForImages/dist/jquery.waitforimages.min
 
 $ ->
