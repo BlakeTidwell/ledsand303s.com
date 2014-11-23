@@ -1,0 +1,26 @@
+{
+  "name": "ledsand303s.com",
+  "version": "0.0.0",
+  "homepage": "http://www.ledsand303s.com",
+  "authors": [ ],
+  "description": "Artist site",
+  "keywords": [
+    "electronica",
+    "metal-diving",
+    "awesome",
+    "super-awesome",
+    "hey-steve"
+  ],
+  "license": "All Rights Reserved",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "waitForImages": "~1.6.4"
+  }
+}
