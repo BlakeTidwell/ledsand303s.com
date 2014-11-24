@@ -20,3 +20,6 @@
 # Divshot
 /.divshot-cache/
 bower_components
+
+# Sublime Meta
+*.sublime-workspace
